@@ -1,0 +1,212 @@
+/* Global Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #693be8, #d183e0);
+    color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    margin-top: 5px;
+    border-radius: 25px;
+    width: 80vw;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .items ul li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .items a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+  
+  /* Dashboard Styling */
+  .dashboard {
+    margin-top: 25px;
+  }
+  
+  .profile {
+    padding: 20px;
+    background: linear-gradient(to bottom, #c5b7ec, #2a88d6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: inline-block;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .card-img {
+    height: 200px;
+    transform: rotate(45deg);
+    border-radius: 7px;
+    margin: 25px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .balance {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin: 15px 0;
+  }
+  
+  .info {
+    font-size: 0.9rem;
+    margin: 20px 0;
+    color: #000000;
+  }
+  
+  /* Brands Page Styling */
+  .brands-container {
+    text-align: center;
+  }
+  
+  .brands-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .brands img {
+    height: 250px;
+    margin: 0 50px;
+    width: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .brands img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .footer-container {
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .footer-content {
+    flex: 1;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: white;
+  }
+  
+  .footer-copyright {
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+  
+  /* RESPONSIVENESS */
+  @media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    /* Profile Section */
+    .profile {
+      width: 95%;
+    }
+  
+    /* Brands Section */
+    .brands img {
+      height: 150px;
+      margin: 0 20px;
+    }
+  
+    /* Footer */
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-links a {
+      margin: 10px 0;
+    }
+  }
+  
